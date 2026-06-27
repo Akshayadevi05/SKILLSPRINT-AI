@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-function ProgressCard({ title, percentage }) {
+function ProgressCard({ title, progress }) {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
@@ -11,9 +11,9 @@ function ProgressCard({ title, percentage }) {
       <div className="progress mt-3">
         <div
           className="progress-bar"
-           style={{ width: `${percentage}%` }}
+           style={{ width: `${progress}%` }}
         >
-          {percentage}%
+          {progress}%
         </div>
       </div>
     </motion.div>
